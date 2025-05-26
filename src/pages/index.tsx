@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import { Header } from '@/components/header';
 import { Geist, Geist_Mono } from 'next/font/google';
 
 const geistSans = Geist({
@@ -23,8 +23,7 @@ export default function Home() {
         font-[family-name:var(--font-geist-sans)]
       `}
     >
-      <h2>Hello World</h2>
-      <Button>Button</Button>
+      <Header />
     </div>
   );
 }
