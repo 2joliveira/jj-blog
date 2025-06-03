@@ -7,6 +7,8 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
+import { useShare } from "@/hooks/use-share/use-share";
 import { allPosts } from "contentlayer/generated";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,6 +23,13 @@ export default function PostPage() {
   const publishedDate = new Date(post?.date || new Date()).toLocaleString(
     "pt-BR"
   );
+  const postUrl = `https://site.set/blog/${slug}`;
+
+  const { shareButtons } = useShare({
+    url: postUrl,
+    title: post?.title,
+    text: post?.description,
+  });
 
   return (
     <main className="mt-32 text-gray-100">
@@ -55,7 +64,6 @@ export default function PostPage() {
             </figure>
 
             <header className="p-4 md:p-6 lg:p-12 pb-0 mt-8 md:mt-12">
-              Add commentMore actions
               <h1 className="mb-6 text-balance text-heading-lg md:text-heading-xl lg:text-heading-xl">
                 {post?.title}
               </h1>
@@ -76,10 +84,31 @@ export default function PostPage() {
             </header>
 
             <div className="prose prose-invert max-w-none px-4 mt-12 md:px-6 lg:px-12">
-              Add commentMore actions
               {post && <Markdown content={post.body.raw} />}
             </div>
           </article>
+
+          <aside className="space-y-6">
+            <div className="rounded-lg bg-gray-700">
+              <h2 className="mb-4 text-heading-xs text-gray-100">
+                Compartilhar
+              </h2>
+
+              <div className="space-y-3">
+                {shareButtons.map((provider) => (
+                  <Button
+                    key={provider.provider}
+                    onClick={() => provider.action()}
+                    variant="outline"
+                    className="w-full justify-start gap-2"
+                  >
+                    {provider.icon}
+                    {provider.name}
+                  </Button>
+                ))}
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
     </main>
