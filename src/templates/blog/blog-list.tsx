@@ -1,21 +1,25 @@
 import { Search } from "@/components/search";
 import { PostCard } from "./components/post-card/post-card";
 import { PostGridCard } from "./components/post-grid-card";
-import { allPosts } from "contentlayer/generated";
+import { Post } from "contentlayer/generated";
 import { useRouter } from "next/router";
 import { Inbox } from "lucide-react";
 
-export function BlogList() {
+export type BlogListProps = {
+  posts: Post[];
+};
+
+export function BlogList({ posts }: BlogListProps) {
   const router = useRouter();
   const query = router.query.q as string;
 
-  const posts = query
-    ? allPosts.filter((post) =>
+  const postlist = query
+    ? posts.filter((post) =>
         post.title.toLocaleLowerCase()?.includes(query.toLocaleLowerCase())
       )
-    : allPosts;
+    : posts;
 
-  const hasPosts = posts?.length > 0;
+  const hasPosts = postlist?.length > 0;
 
   return (
     <div className="flex flex-col py-24 flex-grow h-full">
@@ -37,7 +41,7 @@ export function BlogList() {
 
       {hasPosts && (
         <PostGridCard>
-          {posts.map((post) => (
+          {postlist.map((post) => (
             <PostCard
               key={post._id}
               title={post.title}
