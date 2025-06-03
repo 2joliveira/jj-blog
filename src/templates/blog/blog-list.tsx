@@ -19,7 +19,7 @@ export function BlogList({ posts }: BlogListProps) {
       )
     : posts;
 
-  const hasPosts = posts?.length > 0;
+  const hasPosts = postlist?.length > 0;
 
   return (
     <div className="flex flex-col py-24 flex-grow h-full">
