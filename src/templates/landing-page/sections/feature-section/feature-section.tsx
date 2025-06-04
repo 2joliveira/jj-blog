@@ -39,7 +39,7 @@ export const FeatureSection = () => {
               asChild
               className="w-fit rounded-full hidden mt-4 md:mt-auto md:flex"
             >
-              <Link href="/criar-loja">
+              <Link href="/create-store">
                 Criar loja grátis
                 <ArrowRight />
               </Link>
@@ -59,7 +59,7 @@ export const FeatureSection = () => {
               asChild
               className="w-full gap-2 rounded-full mt-4 md:mt-auto md:hidden"
             >
-              <Link href="/criar-loja">
+              <Link href="/create-store">
                 Criar loja grátis
                 <ArrowRight />
               </Link>
