@@ -7,13 +7,13 @@ export const metadata = {
   openGraph: {
     title: 'Site.Set',
     description: 'Venda seus produtos como afiliado em um único lugar',
-    url: 'https://nextjs-fundamentos.vercel.app/og-image.jpg',
+    url: 'https://jj-blog-eta.vercel.app/og-image.jpg',
     siteName: 'Site.Set',
     locale: 'pt-BR',
     type: 'website',
     images: [
       {
-        url: 'https://nextjs-fundamentos.vercel.app/og-image.jpg',
+        url: 'https://jj-blog-eta.vercel.app/og-image.jpg',
         width: 800,
         height: 600,
         alt: 'Site.Set',
