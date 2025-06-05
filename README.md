@@ -68,9 +68,6 @@ A proposta foi criar uma base sólida de conhecimento sobre a stack do Next.js, 
 
 - Acesse no navegador: http://localhost:3000
 
-## **📜 LICENÇA**
-
-Esse repositório está licenciado pela **MIT LICENSE**.
 
 [next]: https://nextjs.org/
 [typescript]: https://www.typescriptlang.org/
