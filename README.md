@@ -1,40 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+<div align="center">
 
-## Getting Started
+![Logo](./public/logo.svg)
 
-First, run the development server:
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Banner](./public/banner.jpg)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **🚀 OBJETIVO**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Este projeto foi desenvolvido com o objetivo de praticar e aprofundar os fundamentos do Next.js, explorando tanto o Pages Router quanto o App Router. Ao longo do desenvolvimento, foram abordados os seguintes tópicos:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Roteamento: utilização e migração entre Pages Router e App Router.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- Renderização: SSR (Server-Side Rendering), SSG (Static Site Generation) e ISR (Incremental Static Regeneration).
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Data Fetching: diferentes formas de buscar dados com Next.js.
 
-## Learn More
+- Componentes Especiais: uso dos componentes Image e Link nativos do framework.
 
-To learn more about Next.js, take a look at the following resources:
+- Estilização: aplicação de estilos com Tailwind CSS.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- Boas práticas de SEO: otimizações para motores de busca.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Deploy: publicação do projeto em ambiente de produção.
 
-## Deploy on Vercel
+A proposta foi criar uma base sólida de conhecimento sobre a stack do Next.js, com foco tanto na teoria quanto na prática.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **💻 TECNOLOGIAS**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- **[NextJs][next]**
+- **[Typescript][typescript]**
+- **[Tailwind][tailwind]**
+- **[Shadcn UI][shadcn]**
+
+#### **Utilitários**
+
+- Editor: **[Visual Studio Code][vscode]**
+- Contentlayer **[Next Contentlayer][contentlayer]**
+- Markdown: **[React Markdown][react-markdown]**
+- Ícones: **[Lucide React][lucide-react]**
+
+## **🎮 COMO UTILIZAR**
+
+### **Configurações Iniciais** 🛠️
+
+- Primeiro, você precisa ter o <kbd>[NodeJS](https://nodejs.org/en/download/)</kbd> instalado na sua máquina.
+
+- Instale as dependências do projeto:
+
+  ```sh
+    $ npm install
+  ```
+
+### **Gerando os dados com o Contentlayer** 🧱
+
+  ```sh
+    $ npx contentlayer build
+  ```
+
+### **Iniciando o projeto localmente** 🚀
+
+- Após a geração dos dados, inicie o servidor de desenvolvimento com:
+
+  ```sh
+    $ npm run dev
+  ```
+
+- Acesse no navegador: http://localhost:3000
+
+## **📜 LICENÇA**
+
+Esse repositório está licenciado pela **MIT LICENSE**.
+
+[next]: https://nextjs.org/
+[typescript]: https://www.typescriptlang.org/
+[tailwind]: https://tailwindcss.com/
+[vscode]: https://code.visualstudio.com/
+[react-markdown]: https://github.com/remarkjs/react-markdown
+[lucide-react]: https://lucide.dev/guide/packages/lucide-react
+[shadcn]: https://ui.shadcn.com/
+[contentlayer]: https://contentlayer.dev/docs/environments/nextjs-dcf8e39e
