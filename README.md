@@ -73,7 +73,7 @@ A proposta foi criar uma base sólida de conhecimento sobre a stack do Next.js, 
 
 - A aplicação está hospedada na Vercel e pode ser acessada por:
 
-  URL: [https://coffee-delivery-jade.vercel.app/](https://jj-blog-eta.vercel.app/)
+  URL: [https://jj-blog-eta.vercel.app/](https://jj-blog-eta.vercel.app/)
 
 
 [next]: https://nextjs.org/
