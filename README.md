@@ -69,6 +69,13 @@ A proposta foi criar uma base sólida de conhecimento sobre a stack do Next.js, 
 - Acesse no navegador: http://localhost:3000
 
 
+## 🌐 Deploy
+
+- A aplicação está hospedada na Vercel e pode ser acessada por:
+
+  URL: [https://coffee-delivery-jade.vercel.app/](https://jj-blog-eta.vercel.app/)
+
+
 [next]: https://nextjs.org/
 [typescript]: https://www.typescriptlang.org/
 [tailwind]: https://tailwindcss.com/
